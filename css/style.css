@@ -1,0 +1,17 @@
+/* ==========================================================================
+   TravelGeorgia — მთავარი სტილების ფაილი
+   მოდულარული CSS არქიტექტურა
+   ========================================================================== */
+
+@import "variables.css";
+@import "base.css";
+@import "header.css";
+@import "footer.css";
+@import "components.css";
+@import "hero.css";
+@import "filters.css";
+@import "details.css";
+@import "plan.css";
+@import "contact.css";
+@import "map.css";
+@import "responsive.css";

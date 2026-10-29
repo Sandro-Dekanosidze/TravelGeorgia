@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>კონტაქტი — TravelGeorgia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@500;700&family=Noto+Sans+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/contact.css" />
+<link rel="stylesheet" href="css/footer.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="contact">
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">Travel<span>Georgia</span></a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" data-page="home">მთავარი</a></li>
+        <li><a href="catalog.html" data-page="catalog">ბილიკები</a></li>
+        <li><a href="plan.html" data-page="plan">ჩემი გეგმა</a></li>
+        <li><a href="contact.html" data-page="contact">კონტაქტი</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="თემის შეცვლა" title="მუქი/ნათელი თემა">🌙</button>
+      <button class="nav-toggle" aria-expanded="false" aria-label="მენიუს გახსნა">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="padding-top:48px;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>დაგვიკავშირდი</h2>
+      <p>გვაქვს კითხვა ბილიკზე ან გინდა დახმარება მარშრუტის დაგეგმვაში? მოგვწერე.</p>
+    </div>
+
+    <div class="success-box" id="success-box">
+      მადლობა! შენი შეტყობინება მიღებულია — მალე დაგიკავშირდებით.
+    </div>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="field" id="field-name">
+        <label for="name">სახელი</label>
+        <input type="text" id="name" name="name" autocomplete="name" />
+        <span class="error-text" id="error-name"></span>
+      </div>
+
+      <div class="field" id="field-contact">
+        <label for="contact">ელფოსტა ან ტელეფონი</label>
+        <input type="text" id="contact" name="contact" autocomplete="email" />
+        <span class="error-text" id="error-contact"></span>
+      </div>
+
+      <div class="field" id="field-message">
+        <label for="message">შეტყობინება</label>
+        <textarea id="message" name="message" placeholder="მაგ. მაინტერესებს ორდღიანი მარშრუტი სვანეთში..."></textarea>
+        <span class="error-text" id="error-message"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="align-self:flex-start;">გაგზავნა</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 TravelGeorgia — სასწავლო პროექტი</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
